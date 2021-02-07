@@ -17,6 +17,13 @@ namespace Choose_Your_Class
         {
 
         }
+        
+        public Exercise(string name, string muscleWorked, int weightUsed)
+        {
+            Name = name;
+            MuscleWorked = muscleWorked;
+            WeightUsed = weightUsed;
+        }
 
         public void SetName(string name)
         {
