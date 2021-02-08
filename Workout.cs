@@ -21,9 +21,27 @@ namespace Choose_Your_Class
 
             foreach (Exercise exercise in ListofExercises)
             {
+                if (exercise.RepsPerSet < 1)
+                {
+                    exercise.RepsPerSet = 1;
+                }
+                if (exercise.NumberOfSets < 1)
+                {
+                    exercise.NumberOfSets = 1;
+                }
+                exercise.CalculateMuscleExaustion();
+                if (exercise.MuscleExaustion > 100)
+                {
+                    exercise.MuscleExaustion = 100;
+                }
+                if (exercise.WeightUsed < 0)
+                {
+                    exercise.WeightUsed = 0;
+                }
+
                 Console.WriteLine(index + ". " + exercise.Name);
                 Console.WriteLine("Muscle being worked: " + exercise.MuscleWorked);
-                Console.WriteLine("Muscle exaustion level: " + exercise.MuscleExaustion);
+                Console.WriteLine("Muscle exaustion level: " + exercise.MuscleExaustion + "%");
                 Console.WriteLine("Number of repetitions per set: " + exercise.RepsPerSet);
                 Console.WriteLine("Number of sets: " + exercise.NumberOfSets);
                 Console.WriteLine("Weight used: " + exercise.WeightUsed + " lbs");
@@ -44,9 +62,27 @@ namespace Choose_Your_Class
 
             foreach (Exercise exercise in ListofExercises)
             {
+                if (exercise.RepsPerSet < 1)
+                {
+                    exercise.RepsPerSet = 1;
+                }
+                if (exercise.NumberOfSets < 1)
+                {
+                    exercise.NumberOfSets = 1;
+                }
+                exercise.CalculateMuscleExaustion();
+                if (exercise.MuscleExaustion > 100)
+                {
+                    exercise.MuscleExaustion = 100;
+                }
+                if (exercise.WeightUsed < 0)
+                {
+                    exercise.WeightUsed = 0;
+                }
+
                 Console.WriteLine(index + ". " + exercise.Name);
                 Console.WriteLine("Muscle being worked: " + exercise.MuscleWorked);
-                Console.WriteLine("Muscle exaustion level: " + exercise.MuscleExaustion);
+                Console.WriteLine("Muscle exaustion level: " + exercise.MuscleExaustion + "%");
                 Console.WriteLine("Number of repetitions per set: " + exercise.RepsPerSet);
                 Console.WriteLine("Number of sets: " + exercise.NumberOfSets);
                 Console.WriteLine("Weight used: " + exercise.WeightUsed + " lbs");
@@ -66,9 +102,27 @@ namespace Choose_Your_Class
             int index = 1;
             foreach (Exercise exercise in ListofExercises)
             {
+                if (exercise.RepsPerSet < 1)
+                {
+                    exercise.RepsPerSet = 1;
+                }
+                if (exercise.NumberOfSets < 1)
+                {
+                    exercise.NumberOfSets = 1;
+                }
+                exercise.CalculateMuscleExaustion();
+                if (exercise.MuscleExaustion > 100)
+                {
+                    exercise.MuscleExaustion = 100;
+                }
+                if (exercise.WeightUsed < 0)
+                {
+                    exercise.WeightUsed = 0;
+                }
+
                 Console.WriteLine(index + ". " + exercise.Name);
                 Console.WriteLine("Muscle being worked: " + exercise.MuscleWorked);
-                Console.WriteLine("Muscle exaustion level: " + exercise.MuscleExaustion);
+                Console.WriteLine("Muscle exaustion level: " + exercise.MuscleExaustion + "%");
                 Console.WriteLine("Number of repetitions per set: " + exercise.RepsPerSet);
                 Console.WriteLine("Number of sets: " + exercise.NumberOfSets);
                 Console.WriteLine("Weight used: " + exercise.WeightUsed + " lbs");

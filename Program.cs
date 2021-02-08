@@ -59,9 +59,27 @@ namespace Choose_Your_Class
                         bool keepEditing = true;
                         while (keepEditing)
                         {
+                            if (myExercise.RepsPerSet < 1)
+                            {
+                                myExercise.RepsPerSet = 1;
+                            }
+                            if (myExercise.NumberOfSets < 1)
+                            {
+                                myExercise.NumberOfSets = 1;
+                            }
+                            myExercise.CalculateMuscleExaustion();
+                            if (myExercise.MuscleExaustion > 100)
+                            {
+                                myExercise.MuscleExaustion = 100;
+                            }
+                            if (myExercise.WeightUsed < 0)
+                            {
+                                myExercise.WeightUsed = 0;
+                            }
+
                             Console.WriteLine(myExercise.Name);
                             Console.WriteLine("Muscle being worked: " + myExercise.MuscleWorked);
-                            Console.WriteLine("Muscle exaustion level: " + myExercise.MuscleExaustion);
+                            Console.WriteLine("Muscle exaustion level: " + myExercise.MuscleExaustion + "%");
                             Console.WriteLine("Number of repetitions per set: " + myExercise.RepsPerSet);
                             Console.WriteLine("Number of sets: " + myExercise.NumberOfSets);
                             Console.WriteLine("Weight used: " + myExercise.WeightUsed + " lbs");
