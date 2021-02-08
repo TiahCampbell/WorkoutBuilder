@@ -90,7 +90,7 @@ namespace Choose_Your_Class
                             Console.WriteLine("3. Increase Weight Used by 5 lbs");
                             Console.WriteLine("4. Decrease Weight Used by 5 lbs");
                             Console.WriteLine("5. Select Another Exercise to Edit");
-                            Console.WriteLine("4. Return to Main Menu");
+                            Console.WriteLine("6. Return to Main Menu");
 
                             string editChoice = Console.ReadLine();
 
