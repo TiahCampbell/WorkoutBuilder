@@ -102,7 +102,7 @@ namespace Choose_Your_Class
 
         public int CalculateMuscleExaustion()
         {
-            MuscleExaustion *= NumberOfSets;
+            MuscleExaustion = 20 * NumberOfSets;
 
             return MuscleExaustion;
         }

@@ -28,9 +28,9 @@ namespace Choose_Your_Class
                 switch (menuChoice)
                 {
                     case "1":
-                        Console.WriteLine("What is the name of your exercise?");
+                        Console.WriteLine("What is the name of your exercise?\n(Examples: Push-Up, Squat, Deadlift, Pull-Up)");
                         string name = Console.ReadLine();
-                        Console.WriteLine("What muscle does your exercise work?");
+                        Console.WriteLine("What muscle does your exercise work? \n(Examples: Tricpes, Biceps, Quadriceps, Hamstrings, Chest, Back)");
                         string muscleWorked = Console.ReadLine();
                         Console.WriteLine("Will you be using any added weight? \nEnter the amount of weight, in pounds, used: \n(Enter 0 for bodyweight only)");
                         int weightUsed = Convert.ToInt32(Console.ReadLine());
